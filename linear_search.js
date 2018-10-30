@@ -3,6 +3,13 @@
 // Release 0
 console.log("Linear Search")
 let linearSearch = (target, values) => {
+  for(var i = 0; i< values.length; i++){
+    if(values[i] === target){
+      return i
+    }
+    
+  }
+  return -1
   //write your code here
 }
 
@@ -16,6 +23,15 @@ console.log(linearSearch(9, random_numbers));
 // Release 1
 console.log("Global Linear Search")
 let globalLinearSearch = (target, values) => {
+  var result = []
+  var i = 0
+  while (i < values.length){
+    if(values[i] === target){
+      result.push(i)
+    }
+    i++
+  }
+  return result
   //write your code here
 }
 
