@@ -36,6 +36,9 @@ let globalLinearSearch = (target, values) => {
   if (result.length === 1) {
     return result[0]
   }
+  else if (result.length === 0) {
+    return -1
+  }
   else {
     return result
   }
