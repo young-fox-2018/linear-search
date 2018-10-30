@@ -1,9 +1,20 @@
 'use strict'
 
 // Release 0
-console.log("Linear Search")
+console.log("------------Linear Search------------")
 let linearSearch = (target, values) => {
-  //write your code here
+  //write your code here]
+ var i = 0
+
+  while(i < values.length){
+    if(values[i] === target){
+      return i
+    }
+    i++
+    if(i === values.length-1){
+      return -1
+    }
+  }
 }
 
 let random_numbers = [ 6, 29, 18, 2, 72, 19, 18, 10, 37 ];
@@ -13,10 +24,32 @@ console.log(linearSearch(18, random_numbers));
 console.log(linearSearch(9, random_numbers));
 // -1
 
+
+
+
+
 // Release 1
-console.log("Global Linear Search")
+console.log("------------Global Linear Search------------")
 let globalLinearSearch = (target, values) => {
   //write your code here
+
+  var res = []
+
+  for(var j = 0 ; j < values.length ; j++){
+    if(values[j] === target){
+      res.push(j)
+    }
+
+  }
+  if(res.length <= 0){
+    return -1
+  }
+  else if(res.length === 1){
+    return res[0]
+  }
+  else{
+    return res
+  }
 }
 
 let banana_arr = "banana".split("");
