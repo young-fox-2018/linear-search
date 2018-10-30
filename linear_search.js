@@ -32,8 +32,10 @@ let globalLinearSearch = (target, values) => {
       resultArr.push(i)
     }
   }
-  if (resultArr.length <= 1) {
+  if (resultArr.length = 1) {
     return resultArr[0]
+  } else if (resultArr.length == 0) {
+    return -1
   }
   return resultArr
 }
